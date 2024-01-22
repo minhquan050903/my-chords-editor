@@ -1,7 +1,7 @@
 import { toJpeg, toPng } from 'html-to-image';
 import "./App.css";
 import { useState, ChangeEvent,useRef } from "react";
-import html2canvas from "html2canvas";
+
 import {
   Card,
   CardActionArea,
