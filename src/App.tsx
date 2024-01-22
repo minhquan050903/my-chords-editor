@@ -82,6 +82,7 @@ export default function App() {
       <div></div>
       <label htmlFor="file">Add your chord here:</label>
       <input type="file" onChange={handleImageUpload} placeholder='' />
+      <p>Right click on a chord to remove</p>
       <Box id = "chords" ref={boxRef}  sx={{
           
           border: '1px solid black',
