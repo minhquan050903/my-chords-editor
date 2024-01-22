@@ -1583,7 +1583,7 @@
   dependencies:
     "tslib" "^2.0.3"
 
-"framer-motion@>=4.0.0":
+"framer-motion@^10.18.0", "framer-motion@>=4.0.0":
   "integrity" "sha512-oGlDh1Q1XqYPksuTD/usb0I70hq95OUzmL9+6Zd+Hs4XV0oaISBa/UUMSjYiq6m8EUF32132mOJ8xVZS+I0S6w=="
   "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-10.18.0.tgz"
   "version" "10.18.0"

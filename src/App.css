@@ -82,3 +82,6 @@ button:hover {
   background-color: #0069D9; /* Darken the background color when hovered */
   color: white; /* Keep the text color white when hovered */
 }
+img{
+  pointer-events: none;
+}

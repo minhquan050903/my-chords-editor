@@ -28,9 +28,17 @@ interface IImage {
   data: string;
 }
 
+
 export default function App() {
-  const [uploadedImages, setUploadedImages] = useState<IImage[]>([]);
-  const [title, setTitle] = useState("");
+  const presetImages: IImage[] = [
+    { id: 0, data: 'public/A.png' },
+    { id: 1, data: 'public/A7.png' },
+    {id: 2, data: 'public/C.png' },
+    { id: 3, data: 'public/E7.png' },
+    { id: 4, data: 'public/G.png' },
+  ];
+  const [uploadedImages, setUploadedImages] = useState<IImage[]>(presetImages);
+  const [title, setTitle] = useState("YOUR WONDERFUL SONG NAME");
   const handleImageUpload = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
@@ -48,6 +56,7 @@ export default function App() {
   const handleTitleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setTitle(event.target.value);
   };
+
   const handleOnChange = (
     sourceId: string,
     sourceIndex: number,
@@ -72,6 +81,7 @@ export default function App() {
   const deleteImage = (id: number) => {
     setUploadedImages(prevImages => prevImages.filter(image => image.id !== id));
   }; 
+  
   return (
     
     <Box className="App" justifyContent="center">
