@@ -133,8 +133,9 @@ export default function App() {
               </Card>
             </GridItem>
           ))}
+          
         </GridDropZone>
-       
+
       </GridContextProvider>
        <button  onClick={handleDownloadClick}>Download Image</button>
       </Box>      
