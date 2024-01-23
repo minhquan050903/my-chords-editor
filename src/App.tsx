@@ -31,11 +31,11 @@ interface IImage {
 
 export default function App() {
   const presetImages: IImage[] = [
-    { id: 0, data: './public/A.png' },
-    { id: 1, data: './public/A7.png' },
-    {id: 2, data: './public/C.png' },
-    { id: 3, data: './public/E7.png' },
-    { id: 4, data: './public/G.png' },
+    { id: 0, data: '/A.png' },
+    { id: 1, data: '/A7.png' },
+    {id: 2, data: '/C.png' },
+    { id: 3, data: '/E7.png' },
+    { id: 4, data: '/G.png' },
   ];
   const [uploadedImages, setUploadedImages] = useState<IImage[]>(presetImages);
   const [title, setTitle] = useState("YOUR WONDERFUL SONG NAME");
