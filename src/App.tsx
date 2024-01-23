@@ -109,7 +109,7 @@ export default function App() {
           id="items"
           boxesPerRow={4}
           rowHeight={400}
-          style={{ height: 1000 * Math.ceil(uploadedImages.length / 4) }}
+          
         >
           {uploadedImages.map((image: IImage) => (
             <GridItem key={image.id}>
@@ -135,11 +135,11 @@ export default function App() {
           ))}
           
         </GridDropZone>
-
+    
       </GridContextProvider>
-       <button  onClick={handleDownloadClick}>Download Image</button>
+      
       </Box>      
-     
+     <button  onClick={handleDownloadClick}>Download Image</button>
     </Box>
   );
 }

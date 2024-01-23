@@ -64,7 +64,7 @@ input[type="file"]:hover {
   color: white; /* Darken the background color when hovered */
 }
 button {
-  margin: 20px;
+  margin: 0px;
   padding: 10px;
   background-color: #007BFF; /* Bootstrap primary button color */
   border: none; /* Remove border */
