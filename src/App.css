@@ -4,8 +4,14 @@
   /* display: grid;
   grid-template-columns: repeat(4, 220px); */
   max-width: 1000px;
-  margin:auto
-  
+  margin: auto
+}
+#chords{
+  margin: auto;
+}
+
+.Card:hover .delete-button {
+  display: block;
 }
 
 .griditemUI {
@@ -19,69 +25,106 @@
 .container {
   background-color: #fff;
 }
-input[type="text"], input[type="password"], input[type="email"] {
-  width: 100%; /* Full width */
-  padding: 12px 20px; /* Some padding */
-  margin: 8px 0; /* Some margin */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  border: 2px solid #ccc; /* Grey border */
-  border-radius: 4px; /* Rounded borders */
-  background-color: #f8f8f8; /* Light grey background */
-  font-size: 16px; /* Increase font size */
-  transition: 0.3s; /* Add transition for hover effects */
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  /* Full width */
+  padding: 12px 20px;
+  /* Some padding */
+  margin: 8px 0;
+  /* Some margin */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  border: 2px solid #ccc;
+  /* Grey border */
+  border-radius: 4px;
+  /* Rounded borders */
+  background-color: #f8f8f8;
+  /* Light grey background */
+  font-size: 16px;
+  /* Increase font size */
+  transition: 0.3s;
+  /* Add transition for hover effects */
 }
 
 /* When the input field gets focus, change the border and text color */
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
-  border-color: #007BFF; /* Bootstrap primary button color */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-color: #007BFF;
+  /* Bootstrap primary button color */
   outline: none;
 }
+
 label {
   display: inline-block;
   margin-bottom: 5px;
   font-size: 16px;
-  color: #333; /* Dark grey color */
+  color: #333;
+  /* Dark grey color */
 }
+
 input {
-margin: 20px;
+  margin: 20px;
 }
+
 body {
-  font-family: 'Roboto', sans-serif; /* Replace with your desired font */
+  font-family: 'Roboto', sans-serif;
+  /* Replace with your desired font */
 }
+
 input[type="file"] {
   display: inline-block;
   padding: 10px 20px;
   cursor: pointer;
   border: 0.5px solid black;
-  color: black; /* White text color */
-  border-radius: 5px; /* Add rounded corners */
+  color: black;
+  /* White text color */
+  border-radius: 5px;
+  /* Add rounded corners */
   font-size: 16px;
-  transition: 0.3s; /* Add transition for hover effects */
+  transition: 0.3s;
+  /* Add transition for hover effects */
 }
 
 input[type="file"]:hover {
   background-color: #0069D9;
-  color: white; /* Darken the background color when hovered */
+  color: white;
+  /* Darken the background color when hovered */
 }
+
 button {
   margin: 0px;
   padding: 10px;
-  background-color: #007BFF; /* Bootstrap primary button color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Add rounded corners */
-  color: #fff; /* White text color */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove underline */
+  background-color: #007BFF;
+  /* Bootstrap primary button color */
+  border: none;
+  /* Remove border */
+  border-radius: 5px;
+  /* Add rounded corners */
+  color: #fff;
+  /* White text color */
+  text-align: center;
+  /* Center the text */
+  text-decoration: none;
+  /* Remove underline */
   display: inline-block;
   font-size: 16px;
-  transition-duration: 0.4s; /* Add animation when hovered */
-  cursor: pointer; /* Change cursor style when hovered */
+  transition-duration: 0.4s;
+  /* Add animation when hovered */
+  cursor: pointer;
+  /* Change cursor style when hovered */
 }
 
 button:hover {
-  background-color: #0069D9; /* Darken the background color when hovered */
-  color: white; /* Keep the text color white when hovered */
+  background-color: #0069D9;
+  /* Darken the background color when hovered */
+  color: white;
+  /* Keep the text color white when hovered */
 }
-img{
+
+img {
   pointer-events: none;
 }
